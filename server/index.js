@@ -1,13 +1,13 @@
-const http = require('http');
-const fs = require('fs');
+const express = require('express');
+const app = express();
+const path = require('path');
+
 const PORT = 3000;
 
+app.use(express.static(path.join(__dirname + '/../public')));
 
-const server = http.createServer((req, res) => {
-    console.log('request was made' + req.url);
-    res.writeHead(200, {'Content-Type' : 'text/plain'});
-    res.end('aaaaayyyy dis is a test')
-});
+app.use('/about', express.static(path.join(__dirname + '/../public/about.html')))
 
-server.listen(PORT);
-console.log('meet me @ port: ', PORT)
+app.listen(PORT, () => {
+    console.log('meet me @ localhost: ', PORT)
+})
