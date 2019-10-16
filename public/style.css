@@ -1,0 +1,79 @@
+@font-face{
+    font-family: 'Telegraf-bold';
+    src: url('./fonts/Telegraf-UltraBold.otf') format('opentype');
+}
+/* 
+@font-face{
+    font-family: 'Telegraf-reg';
+    src: url('./fonts/Telegraf-UltraBold.otf') format('opentype');
+} */
+
+body{
+    background-color: #fdeade;
+    font-family: 'Telegraf-bold';
+    color: #191919;
+    height: 100vh;
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+.footer,
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.header{
+    margin-top: 20px;
+
+}
+
+
+.projects ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects a:hover{
+    color:#fdeade;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.socials ul{
+    display: flex;
+}
+
+.socials ul li{
+    padding-right: 5px;
+    list-style-type: none;
+}
+
+.projects ul li{
+    font-size: 8rem;
+    display: flex;
+}
+
+.projects{
+    height: 80%;
+    width: 80%; 
+     margin: 0 auto;
+}
+
+
+
+
