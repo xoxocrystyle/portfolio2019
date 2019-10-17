@@ -1,0 +1,21 @@
+{
+  "name": "portfolio2019",
+  "version": "1.0.0",
+  "description": "\"# portfolio2019\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd server && nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xoxocrystyle/portfolio2019.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xoxocrystyle/portfolio2019/issues"
+  },
+  "homepage": "https://github.com/xoxocrystyle/portfolio2019#readme"
+}
