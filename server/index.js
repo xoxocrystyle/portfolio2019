@@ -8,6 +8,6 @@ app.use(express.static(path.join(__dirname + '/../public')));
 
 app.use('/about', express.static(path.join(__dirname + '/../public/about.html')))
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log('meet me @ localhost: ', PORT)
 })
