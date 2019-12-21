@@ -1,9 +1,9 @@
-@font-face{
+@font-face {
     font-family: 'Telegraf-bold';
     src: url('./fonts/Telegraf-UltraBold.otf') format('opentype');
 }
 
-body{
+body {
     background-color: #fdeade;
     font-family: 'Telegraf-bold';
     color: #191919;
@@ -13,15 +13,13 @@ body{
     overflow-y: hidden;
 }
 
-a{
+a {
     text-decoration: none;
     color: #000;
 }
 
-
-
 .footer,
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     height: 10%;
@@ -29,11 +27,9 @@ a{
     margin-left: 30px;
 }
 
-.header{
+.header {
     margin-top: 20px;
-
 }
-
 
 .projects ul {
     list-style-type: none;
@@ -44,57 +40,69 @@ a{
     align-items: center;
 }
 
-.projects a:hover{
-    color:#fdeade;
+.projects a:hover {
+    color: #fdeade;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
 
-.socials ul{
+.socials ul {
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-.socials ul li{
+.socials ul li {
     padding-right: 5px;
     list-style-type: none;
 }
 
-.projects ul li{
+.projects ul li {
     font-size: 8rem;
     display: flex;
 }
 
-.projects ul{
+.projects ul {
     padding: 0;
 }
 
-.projects{
+.projects {
     height: 80%;
-    width: 80%; 
-     margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .projects ul li {
+        font-size: 6rem;
+        margin-bottom: 10px;
+    }
 }
 
 /*IPAD STYLING*/
+
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
     ul {
         padding: 0;
     }
-
-    .projects ul li  {
+    .projects ul li {
         font-size: 7rem;
         margin-bottom: 10px;
     }
-  }
+}
 
-  /*MOBILE STYLING*/
-  @media only screen and (max-width: 767px) and (orientation: portrait) {
-    .projects ul{
+/*MOBILE STYLING*/
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .projects ul {
         padding: 70px 0;
     }
-
-    .projects ul li  {
+    .projects ul li {
         font-size: 3rem;
         margin-bottom: 10px;
     }
