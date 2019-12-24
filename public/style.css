@@ -40,9 +40,10 @@ a {
     align-items: center;
 }
 
+#stroke,
 .projects a:hover {
     color: #fdeade;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
 }
 
@@ -66,11 +67,39 @@ a {
     padding: 0;
 }
 
+.about-me, 
 .projects {
     height: 80%;
     width: 80%;
     margin: 0 auto;
 }
+
+.about-me h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+ .skill-row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.skill-container {
+    width: 30%;
+} 
+
+/* .skill-container ul{
+    display: inline-block;
+} */
+
+.skill-container  li {
+    display: inline-block;
+    list-style-type: none;
+    min-width: 30%;
+    max-height: 10%;
+  } 
+  
 
 /* 
   ##Device = Laptops, Desktops
