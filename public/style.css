@@ -83,6 +83,7 @@ a {
     display: flex;
     width: 100%;
     flex-direction: row;
+    justify-content: center;
 }
 
 .skill-container {
@@ -123,6 +124,10 @@ a {
         font-size: 7rem;
         margin-bottom: 10px;
     }
+
+    .about-me h1 {
+        font-size: 2.5rem;
+    }
 }
 
 /*MOBILE STYLING*/
@@ -134,5 +139,22 @@ a {
     .projects ul li {
         font-size: 3rem;
         margin-bottom: 10px;
+    }
+
+    .about-me h1{
+        font-size: 1.4rem;
+    }
+
+    section .skills {
+        height: 300px;
+        overflow: auto;
+    }
+
+    .skill-row {
+        flex-direction: column;
+    }
+
+    .skill-container {
+        width: 100%;
     }
 }
