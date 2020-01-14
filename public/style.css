@@ -90,17 +90,35 @@ a {
     width: 30%;
 } 
 
-/* .skill-container ul{
-    display: inline-block;
-} */
-
 .skill-container  li {
     display: inline-block;
     list-style-type: none;
     min-width: 30%;
     max-height: 10%;
   } 
-  
+
+  .project{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-self: center;
+      height: 80%;
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  .project-details{
+      text-align: center;
+  }
+
+  .project-details, .image {
+    width: 50%;
+    padding: 20px;
+}
+
+  .image img{
+        max-width: 100%;
+  }
 
 /* 
   ##Device = Laptops, Desktops
