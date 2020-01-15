@@ -45,6 +45,7 @@ a {
     color: #fdeade;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
+    transition: .1s;
 }
 
 .socials ul {
@@ -67,19 +68,20 @@ a {
     padding: 0;
 }
 
-.about-me, 
-.projects {
+.about-me,
+.projects,
+.project {
     height: 83%;
     width: 80%;
     margin: 0 auto;
 }
 
-.about-me h1{
+.about-me h1 {
     font-size: 2rem;
     text-align: center;
 }
 
- .skill-row {
+.skill-row {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -88,37 +90,63 @@ a {
 
 .skill-container {
     width: 30%;
-} 
+}
 
-.skill-container  li {
+.skill-container li {
     display: inline-block;
     list-style-type: none;
     min-width: 30%;
     max-height: 10%;
-  } 
+}
 
-  .project{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-self: center;
-      height: 80%;
-      width: 80%;
-      margin: 0 auto;
-  }
 
-  .project-details{
-      text-align: center;
-  }
 
-  .project-details, .image {
+#project-title {
+    font-size: 6rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    /* height: 80%;
+      width: 80%; */
+    /* margin: 50px auto; */
+}
+
+.project-text {
+    text-align: center;
+   margin: 50px auto;
+}
+
+.project-buttons{
+    margin-top: 50px;
+
+}
+
+.project-text,
+.image {
     width: 50%;
     padding: 20px;
 }
 
-  .image img{
-        max-width: 100%;
-  }
+.project-buttons a{
+    padding: 10px 30px;
+    border: solid black 2px;
+}
+
+.project-buttons a:hover{
+    color: #FDEADE;
+    background-color: black;
+    transition: .5s;
+}
+
+.image img {
+    max-width: 100%;
+}
 
 /* 
   ##Device = Laptops, Desktops
@@ -138,6 +166,7 @@ a {
     ul {
         padding: 0;
     }
+
     .projects ul li {
         font-size: 6rem;
         margin-bottom: 10px;
@@ -145,6 +174,17 @@ a {
 
     .about-me h1 {
         font-size: 2.5rem;
+    }
+
+    .project-details {
+        flex-direction: column;
+    }
+
+    .project-text,
+    .image {
+        width: 100%;
+        padding: 0;
+        margin: 30px auto;
     }
 }
 
@@ -154,12 +194,13 @@ a {
     .projects ul {
         padding: 70px 0;
     }
+
     .projects ul li {
         font-size: 3rem;
         margin-bottom: 10px;
     }
 
-    .about-me h1{
+    .about-me h1 {
         font-size: 1.4rem;
     }
 
@@ -175,4 +216,24 @@ a {
     .skill-container {
         width: 100%;
     }
+
+    .project {
+        width: 100%;
+    }
+
+    #project-title {
+        font-size: 3rem;
+    }
+
+    .project-details {
+        flex-direction: column;
+    }
+
+    .project-text,
+    .image {
+        width: 80%;
+        margin: 0px auto;
+    }
+
+
 }
